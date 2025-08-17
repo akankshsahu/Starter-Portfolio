@@ -1,0 +1,11 @@
+player,position,team,season,games,passing_yards,rushing_attempts,rushing_yards,receptions,receiving_yards,tackles,pro_bowl
+A. Rookie,QB,NYJ,2024,16,3200,45,210,0,0,2,0
+B. Rookie,RB,DET,2024,17,50,240,1100,35,280,1,1
+C. Rookie,WR,MIN,2024,15,0,10,60,72,980,0,0
+D. Rookie,TE,KC,2024,17,0,5,22,56,610,0,0
+E. Rookie,LB,DAL,2024,17,0,15,90,0,0,110,1
+F. Rookie,CB,SEA,2024,17,0,5,30,0,0,70,0
+G. Rookie,RB,SF,2023,16,0,210,980,25,210,0,0
+H. Rookie,WR,PHI,2023,17,0,5,24,64,940,0,1
+I. Rookie,QB,CHI,2023,15,2900,60,350,0,0,3,0
+J. Rookie,WR,BUF,2022,16,0,3,18,68,860,0,0

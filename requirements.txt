@@ -1,0 +1,12 @@
+fastapi==0.115.2
+uvicorn[standard]==0.30.6
+pandas==1.5.3
+numpy==1.26.4
+scikit-learn==1.5.2
+requests==2.32.3
+pyarrow==17.0.0
+matplotlib==3.8.4
+python-dotenv==1.0.1
+pydantic==2.8.2
+nfl-data-py==0.3.3
+joblib>=1.0.0

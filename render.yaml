@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: rookie-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn projects.football_rookie_analysis.src.api:app --host 0.0.0.0 --port ${PORT}
+  - type: web
+    name: exoplanet-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn projects.exoplanet_habitability.src.api:app --host 0.0.0.0 --port ${PORT}
+  - type: web
+    name: covid-metrics-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn projects.covid19_dashboard.src.api:app --host 0.0.0.0 --port ${PORT}
