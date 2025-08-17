@@ -1,29 +1,26 @@
-# Setup — step-by-step (like you're 5)
+# Setup 
 
 ## 1) Install the tools
-- **Python 3.11+**: https://www.python.org/downloads/
-- **Git**: https://git-scm.com/downloads
-- **VS Code** editor: https://code.visualstudio.com/download
-- **Tableau Public** (free): https://www.tableau.com/products/public
+- **Python 3.11+**
+- **Git**
+- **VS Code or another IDE** 
+- **Tableau Public** 
 
 Install them with the default options. Open **VS Code** when done.
 
 ## 2) Get this code
-- Download this repo as a zip (or clone from GitHub if you've pushed it).
+
 
 ## 3) Make a Python sandbox (virtual env)
 Open a terminal in the project folder and run:
 ```bash
 python -m venv .venv
-# Windows:
-#   .venv\Scripts\activate
-# Mac/Linux:
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ## 4) Run the data pipelines
-Do these one by one. They download data (internet required), then clean and save CSVs in `data/processed/`.
+Do these one by one
 
 ```bash
 # Football
@@ -59,14 +56,9 @@ Visit:
 ## 6) Visualize in Tableau
 Open Tableau Public → connect to each project's `data/processed/*.csv` and build dashboards with filters. Publish to Tableau Public and embed links into the portfolio site.
 
-## 7) Deploy the portfolio to GitHub Pages
-- Create a GitHub repo.
-- Push this code.
-- Make sure your default branch is **main**.
-- GitHub Actions will publish `portfolio/` to Pages automatically (see `.github/workflows/pages.yml`). The URL will be: `https://<your-username>.github.io/<your-repo>/`
 
-## 8) Deploy the APIs (optional) with Render
-- Create a free account at https://render.com and connect your GitHub.
+## 7) Deploy the APIs with Render
+- Create an account at https://render.com and connect your GitHub.
 - Click **New +** → **Blueprint** → select this repo (Render reads `render.yaml`).
 - It will create three services (rookie-api, exoplanet-api, covid-metrics-api).
 - Click **Deploy** for each.
